@@ -11,3 +11,12 @@ Password for user: 321
   
 Username for admin: admin  
 Password for admin: 123  
+
+
+Use following endpoints when first starting the app :   
+<b>/player  
+/tournament  
+/match  
+/event  
+/login</b>  
+
