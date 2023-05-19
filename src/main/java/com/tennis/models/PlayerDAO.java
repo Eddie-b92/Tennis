@@ -9,7 +9,7 @@ public interface PlayerDAO {
 
     public List<Player> search(Player player);
 
-    public Player getPlayer(int id);
+    public Player getPlayerById(int id);
 
     public boolean add(Player player);
 

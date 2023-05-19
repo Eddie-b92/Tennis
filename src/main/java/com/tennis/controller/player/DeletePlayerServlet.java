@@ -44,7 +44,7 @@ public class DeletePlayerServlet extends HttpServlet {
         try {
             int playerId = Integer.parseInt(request.getParameter("delete"));
             if (playerId > 0 && playerId < 1_000_000) {
-                player = playerDAO.getPlayer(playerId);
+                player = playerDAO.getPlayerById(playerId);
 
                 request.setAttribute("name", player.firstName() +" "+ player.lastName());
 

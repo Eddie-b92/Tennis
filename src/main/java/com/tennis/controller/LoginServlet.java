@@ -30,8 +30,8 @@ public class LoginServlet extends HttpServlet {
 
         HttpSession session = request.getSession(false);
         response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
-        response.setHeader("Pragma", "no-cache");
-        response.setDateHeader("Expires", 0);
+        response.setHeader("Pragma", "no-cache"); // used for older browsers
+        response.setDateHeader("Expires", 0); // expiration of the session
 
         if (session != null && session.getAttribute("username") != null)
             response.sendRedirect("player");

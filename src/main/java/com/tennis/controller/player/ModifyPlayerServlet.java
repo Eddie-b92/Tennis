@@ -44,7 +44,7 @@ public class ModifyPlayerServlet extends HttpServlet {
         try {
             int playerId = Integer.parseInt(request.getParameter("modify"));
             if (playerId > 0 && playerId < 1_000_000) {
-                player = playerDAO.getPlayer(playerId);
+                player = playerDAO.getPlayerById(playerId);
 
                 request.setAttribute("firstName", player.firstName());
                 request.setAttribute("lastName",  player.lastName());

@@ -8,7 +8,9 @@ import java.sql.SQLException;
 
 public class DAOFactory {
 
-    private String url, username, password;
+    private final String url;
+    private final String username;
+    private final String password;
 
     private DAOFactory(String url, String username, String password) {
         this.url = url;

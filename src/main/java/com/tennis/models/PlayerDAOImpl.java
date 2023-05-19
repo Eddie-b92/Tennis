@@ -106,7 +106,7 @@ public class PlayerDAOImpl implements PlayerDAO {
     }
 
     @Override
-    public Player getPlayer(int id) {
+    public Player getPlayerById(int id) {
         Player player = null;
 
         String query = "SELECT * FROM joueur " +
